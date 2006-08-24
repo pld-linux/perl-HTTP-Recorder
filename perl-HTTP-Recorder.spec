@@ -10,7 +10,7 @@ Summary:	Proxy HTTP request and save it to Web::Mechanize scripts
 Summary(pl):	Po¶redniczenie w dialogu HTTP i zapisywanie go jako skrypt Web::Mechanize
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.05
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -20,6 +20,7 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}
 BuildRequires:	perl-HTML-Parser
+BuildRequires:	perl-HTTP-Request-Params
 BuildRequires:	perl-URI
 BuildRequires:	perl-libwww
 %endif
@@ -58,6 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES README
-%{perl_vendorlib}/HTTP/Recoder.pm
-%{perl_vendorlib}/HTTP/Recoder
+%{perl_vendorlib}/HTTP/*.pm
+%{perl_vendorlib}/HTTP/Recorder
 %{_mandir}/man3/*
