@@ -7,7 +7,7 @@
 %define		pdir	HTTP
 %define		pnam	Recorder
 Summary:	Proxy HTTP request and save it to Web::Mechanize scripts
-Summary(pl.UTF-8):   Pośredniczenie w dialogu HTTP i zapisywanie go jako skrypt Web::Mechanize
+Summary(pl.UTF-8):	Pośredniczenie w dialogu HTTP i zapisywanie go jako skrypt Web::Mechanize
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.05
 Release:	1
