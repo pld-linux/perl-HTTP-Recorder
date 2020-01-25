@@ -3,7 +3,6 @@
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	HTTP
 %define		pnam	Recorder
 Summary:	Proxy HTTP request and save it to Web::Mechanize scripts
